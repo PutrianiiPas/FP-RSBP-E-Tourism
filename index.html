@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekomendasi Wisata Surabaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 450px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0369a1;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e0f2fe;
+            border-left: 4px solid #0284c7;
+        }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Rekomendasi Tempat Wisata di Surabaya</h2>
+
+    <label>Jenis Wisata:</label>
+    <select id="jenis">
+        <option value="keluarga">Keluarga</option>
+        <option value="sejarah">Sejarah</option>
+        <option value="edukasi">Edukasi</option>
+        <option value="alam">Alam</option>
+        <option value="kuliner">Kuliner</option>
+    </select>
+
+    <label>Preferensi Lokasi:</label>
+    <select id="lokasi">
+        <option value="skip">- Skip -</option>
+        <option value="indoor">Indoor</option>
+        <option value="outdoor">Outdoor</option>
+    </select>
+
+    <label>Suasana:</label>
+    <select id="suasana">
+        <option value="skip">- Skip -</option>
+        <option value="ramai">Ramai</option>
+        <option value="menengah">Menengah</option>
+        <option value="tenang">Tenang</option>
+    </select>
+
+    <label>Budget:</label>
+    <select id="budget">
+        <option value="skip">- Skip -</option>
+        <option value="gratis">Gratis</option>
+        <option value="murah">Murah</option>
+        <option value="menengah">Menengah</option>
+    </select>
+
+    <button onclick="cariRekomendasi()">Cari Rekomendasi</button>
+
+    <div id="output" class="result" style="display:none;"></div>
+</div>
+
+<!-- Hubungkan ke script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
