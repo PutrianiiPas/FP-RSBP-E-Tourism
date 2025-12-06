@@ -204,3 +204,103 @@ ul { padding-left: 20px; margin: 8px 0 0 0; }
     color: var(--muted);
 }
 .note code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; }
+
+/* --- Modal Styles --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.close-btn:hover { color: #ddd; }
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-content h2 {
+    padding: 15px 20px 5px;
+    margin: 0;
+    color: #0f172a;
+}
+
+.modal-content p {
+    padding: 0 20px 20px;
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.modal-footer {
+    background: #f1f5f9;
+    padding: 12px 20px;
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+/* Style untuk list hasil agar bisa diklik */
+.result-item {
+    padding: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-item:hover {
+    background-color: #f0f9ff;
+    padding-left: 18px; /* Efek geser sedikit */
+}
+
+.result-item:last-child { border-bottom: none; }
+
+.result-item::after {
+    content: '\f05a'; /* FontAwesome Info Icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #0284c7;
+}
