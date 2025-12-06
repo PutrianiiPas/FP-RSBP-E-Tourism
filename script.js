@@ -1,66 +1,138 @@
+// --- BASIS PENGETAHUAN (Knowledge Base) ---
+// Data ini disusun berdasarkan Dokumentasi Tabel Pengetahuan 
+// Kami menambahkan beberapa tag tambahan untuk menutupi celah logika (seperti Taman Bungkul = Kuliner)
+
+const dataWisata = [
+    {
+        nama: "Kebun Binatang Surabaya",
+        jenis: ["keluarga", "edukasi", "alam"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "murah"
+    },
+    {
+        nama: "Tugu Pahlawan",
+        jenis: ["sejarah", "edukasi"],
+        lokasi: "outdoor",
+        suasana: "menengah",
+        budget: "murah" // Tiket masuk museum murah, area tugu gratis
+    },
+    {
+        nama: "Taman Bungkul",
+        jenis: ["alam", "keluarga", "kuliner"], // Kuliner ditambahkan karena sentra PKL
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "gratis"
+    },
+    {
+        nama: "Museum 10 November",
+        jenis: ["sejarah", "edukasi", "keluarga"], // Keluarga ditambahkan untuk edukasi anak
+        lokasi: "indoor",
+        suasana: "tenang", // Bisa juga menengah, tapi cenderung tenang dibanding taman
+        budget: "murah"
+    },
+    {
+        nama: "House of Sampoerna",
+        jenis: ["sejarah", "edukasi", "keluarga"],
+        lokasi: "indoor",
+        suasana: "tenang",
+        budget: "gratis"
+    },
+    {
+        nama: "Jembatan Suramadu",
+        jenis: ["alam", "sejarah"], // Ikon sejarah pembangunan
+        lokasi: "outdoor",
+        suasana: "menengah",
+        budget: "gratis"
+    },
+    {
+        nama: "Hotel Majapahit",
+        jenis: ["sejarah", "kuliner"], // Kuliner ditambahkan (High Tea)
+        lokasi: "indoor",
+        suasana: "tenang",
+        budget: "menengah"
+    },
+    {
+        nama: "Ciputra Waterpark",
+        jenis: ["keluarga"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "menengah"
+    },
+    {
+        nama: "Monumen Kapal Selam",
+        jenis: ["sejarah", "edukasi", "keluarga"],
+        lokasi: "indoor", // Masuk ke dalam kapal (indoor)
+        suasana: "menengah",
+        budget: "murah"
+    },
+    {
+        nama: "Surabaya North Quay",
+        jenis: ["kuliner", "edukasi", "alam"], // Pemandangan laut (alam)
+        lokasi: "outdoor", // Semi-outdoor
+        suasana: "ramai",
+        budget: "murah"
+    },
+    {
+        nama: "Alun-alun Surabaya",
+        jenis: ["alam", "sejarah", "keluarga"],
+        lokasi: "outdoor", // Ada area basement (indoor), tapi dominan outdoor/alun-alun
+        suasana: "ramai",
+        budget: "gratis"
+    }
+];
+
 function cariRekomendasi() {
-    let jenis = document.getElementById("jenis").value;
-    let lokasi = document.getElementById("lokasi").value === "skip" ? null : document.getElementById("lokasi").value;
-    let suasana = document.getElementById("suasana").value === "skip" ? null : document.getElementById("suasana").value;
-    let budget = document.getElementById("budget").value === "skip" ? null : document.getElementById("budget").value;
+    // --- 1. Ambil Input dari User ---
+    
+    // Jenis Wisata (Sekarang bisa di-skip)
+    let inputJenis = document.getElementById("jenis").value;
+    if (inputJenis === "skip") inputJenis = null; // Ubah jadi null jika skip
 
-    let rekomendasi = new Set();
+    // Lokasi
+    let inputLokasi = document.getElementById("lokasi").value;
+    if (inputLokasi === "skip") inputLokasi = null;
 
-    // --- Aturan ---
-    if (jenis === "sejarah" && lokasi === "indoor")
-        rekomendasi.add("Museum 10 November").add("House of Sampoerna").add("Monumen Kapal Selam").add("Hotel Majapahit");
+    // Suasana
+    let inputSuasana = document.getElementById("suasana").value;
+    if (inputSuasana === "skip") inputSuasana = null;
 
-    if (jenis === "sejarah" && lokasi === "outdoor")
-        rekomendasi.add("Tugu Pahlawan").add("Alun-alun Surabaya");
+    // Budget
+    let inputBudget = document.getElementById("budget").value;
+    if (inputBudget === "skip") inputBudget = null;
 
-    if (jenis === "edukasi" && lokasi === "indoor")
-        rekomendasi.add("Museum 10 November").add("House of Sampoerna").add("Monumen Kapal Selam");
+    // --- 2. Mesin Inferensi (Filter Logic) ---
+    let hasilRekomendasi = dataWisata.filter(wisata => {
+        
+        // Cek Jenis
+        // Jika inputJenis NULL (User pilih skip), maka otomatis TRUE (lolos filter)
+        // ATAU jika inputJenis ada di dalam list jenis wisata tersebut
+        let cekJenis = inputJenis === null || wisata.jenis.includes(inputJenis);
 
-    if (jenis === "edukasi" && lokasi === "outdoor")
-        rekomendasi.add("Kebun Binatang Surabaya").add("Surabaya North Quay");
+        // Cek Lokasi
+        let cekLokasi = inputLokasi === null || wisata.lokasi === inputLokasi;
 
-    if (jenis === "sejarah" && suasana === "tenang")
-        rekomendasi.add("Museum 10 November").add("House of Sampoerna").add("Hotel Majapahit");
+        // Cek Suasana
+        let cekSuasana = inputSuasana === null || wisata.suasana === inputSuasana;
 
-    if (jenis === "alam" && suasana === "tenang")
-        rekomendasi.add("Jembatan Suramadu");
+        // Cek Budget
+        let cekBudget = inputBudget === null || wisata.budget === inputBudget;
 
-    if (jenis === "alam" && suasana === "ramai")
-        rekomendasi.add("Taman Bungkul").add("Alun-alun Surabaya");
+        // Syarat: Semua filter harus TRUE agar wisata ditampilkan
+        return cekJenis && cekLokasi && cekSuasana && cekBudget;
+    });
 
-    if (jenis === "keluarga" && lokasi === "outdoor")
-        rekomendasi.add("Kebun Binatang Surabaya").add("Ciputra Waterpark");
-
-    if (jenis === "kuliner" && suasana === "ramai")
-        rekomendasi.add("Surabaya North Quay");
-
-    if (budget === "gratis")
-        rekomendasi.add("Tugu Pahlawan").add("Taman Bungkul").add("House of Sampoerna")
-                    .add("Alun-alun Surabaya").add("Jembatan Suramadu");
-
-    if (budget === "murah")
-        rekomendasi.add("Kebun Binatang Surabaya").add("Museum 10 November")
-                    .add("Monumen Kapal Selam").add("Surabaya North Quay");
-
-    if (budget === "menengah")
-        rekomendasi.add("Ciputra Waterpark").add("Hotel Majapahit");
-
-    if (suasana === "ramai")
-        rekomendasi.add("Kebun Binatang Surabaya").add("Taman Bungkul").add("Ciputra Waterpark")
-                    .add("Surabaya North Quay").add("Alun-alun Surabaya");
-
-    if (suasana === "menengah")
-        rekomendasi.add("Tugu Pahlawan").add("Jembatan Suramadu").add("Monumen Kapal Selam");
-
-    // Tampilkan hasil
+    // --- 3. Tampilkan Output ---
     let outputDiv = document.getElementById("output");
     outputDiv.style.display = "block";
 
-    if (rekomendasi.size === 0) {
-        outputDiv.innerHTML = "Tidak ada rekomendasi sesuai kriteria Anda.";
+    if (hasilRekomendasi.length === 0) {
+        outputDiv.innerHTML = `<div style="padding:10px; color: #7f1d1d; background: #fef2f2; border-radius:6px;">
+            <i class="fa-solid fa-circle-exclamation"></i> 
+            Mohon maaf, tidak ada wisata yang cocok dengan kombinasi filter ini.
+        </div>`;
     } else {
-        outputDiv.innerHTML = "<b>Rekomendasi:</b><ul>" +
-            [...rekomendasi].map(r => `<li>${r}</li>`).join("") +
-            "</ul>";
+        let listHtml = hasilRekomendasi.map(w => `<li>${w.nama}</li>`).join("");
+        outputDiv.innerHTML = `<b>Rekomendasi (${hasilRekomendasi.length} ditemukan):</b><ul>${listHtml}</ul>`;
     }
 }
