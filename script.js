@@ -12,6 +12,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "murah",
         harga: "Rp 15.000",
+        jam:"08.00 - 16.00 WIB",
         gambar: "images/kbs.jpg",
         deskripsi: "Destinasi wisata edukasi satwa terlengkap di Asia Tenggara. Cocok untuk keluarga dan anak-anak mengenal berbagai jenis binatang di lingkungan yang asri.",
         alamat: "Jl. Setail No.1, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241"
@@ -24,6 +25,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "murah",
         harga: "Rp 5.000",
+        jam:"08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/tupal.jpg",
         deskripsi: "Monumen ikonik Surabaya untuk mengenang pertempuran 10 November. Dilengkapi dengan museum bawah tanah yang menyimpan diorama sejarah perjuangan.",
         alamat: "Jl. Pahlawan No.10, Alun-alun Contong, Kec. Bubutan, Kota SBY, Jawa Timur 60174"
@@ -36,6 +38,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "gratis",
         harga: "Gratis",
+        jam: "24 Hours",
         gambar: "images/bungkul.png", 
         deskripsi: "Taman kota terbaik yang asri dan hijau. Dilengkapi area bermain anak, skate park, dan sentra kuliner kaki lima yang sangat ramai di malam hari.",
         alamat: "Jl. Taman Bungkul, Darmo, Kec. Wonokromo, Kota SBY, Jawa Timur 60241"
@@ -48,6 +51,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Gratis - Rp 8.000",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/mussep.webp",
         deskripsi: "Museum yang terletak di kompleks Tugu Pahlawan. Menyimpan bukti sejarah pertempuran 10 November, rekaman pidato Bung Tomo, dan senjata perjuangan.",
         alamat: "Jl. Pahlawan No.10, Alun-alun Contong, Kec. Bubutan, Kota SBY, Jawa Timur 60174"
@@ -60,6 +64,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "gratis",
         harga: "Gratis",
+        jam: "24 Hours",
         gambar: "images/suramadu.jpg",
         deskripsi: "Jembatan terpanjang di Indonesia yang menghubungkan Surabaya dan Madura. Menawarkan pemandangan laut selat Madura yang indah, terutama saat matahari terbit.",
         alamat: "Jl. Jembatan Suramadu, Surabaya, Jawa Timur"
@@ -72,21 +77,23 @@ const dataWisata = [
         suasana: "tenang",
         budget: "menengah",
         harga: "Rp 100.000 (Tour Sejarah)",
+        jam: "14.00 - 21.00 WIB",
         gambar: "images/homaj.png",
         deskripsi: "Hotel bersejarah saksi bisu insiden perobekan bendera Belanda. Memiliki arsitektur kolonial yang mewah dan taman dalam yang sangat indah. Kamu bisa ke sini tidak hanya untuk menginap, tetapi juga untuk tur sejarah karena Hotel Majapahit juga membuka tur untuk wisatawan umum bertajuk Heritage Hotel Tour. Saat mengikuti tur ini, kamu bakal dibawa berkeliling hotel sambil dijelaskan sejarah yang pernah terjadi di ruangan-ruangan hotel tersebut.",
         alamat: "Jl. Tunjungan No.65-67, Genteng, Kec. Genteng, Kota SBY, Jawa Timur 60275"
     },
     {
         id: 7,
-        nama: "Ciputra Waterpark",
-        jenis: ["keluarga"],
-        lokasi: "outdoor",
-        suasana: "ramai",
+        nama: "Museum Pusat Angkatan Laut",
+        jenis: ["edukasi"],
+        lokasi: "indoor",
+        suasana: "tenang",
         budget: "menengah",
-        harga: "Rp 75.000 - Rp 95.000",
-        gambar: "images/ciputra.jpg",
-        deskripsi: "Taman bermain air terbesar di Surabaya dengan tema Sinbad. Memiliki banyak wahana seru seperti kolam ombak dan seluncuran raksasa.",
-        alamat: "Jl. Citra Raya Niaga No.1, Lakarsantri, Kec. Lakarsantri, Kota SBY, Jawa Timur 60216"
+        harga: "Rp 25.000 - Rp 75.000",
+        jam: "08.30 - 16.00 WIB",
+        gambar: "images/museum-al.jpeg",
+        deskripsi: "Museum Pusat Angkatan Laut yang diresmikan pada 11 September 2023 ini berlokasi diatas lahan seluas 3,2h dan berada di ujung utara kota Surabaya. Museum pintar ini dirancang dengan menggunakan teknologi 4.0. dan terdapat ruang terbuka hijau dengan konsep yang teduh dan asri. Museum ini juga menawarkan pengalaman interaktif, simulasi, dan edukatif dengan berbagai koleksi yang menarik.",
+        alamat: "Jl. Raya Hang Tuah No.1, Perak Utara, Kec. Pabean Cantikan, Kota SBY, Jawa Timur 60165"
     },
     {
         id: 8,
@@ -96,6 +103,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "murah",
         harga: "Rp 15.000",
+        jam: "08.00 - 21.00 WIB",
         gambar: "images/monkasel.jpg",
         deskripsi: "Monumen Kapal Selam KRI Pasopati 410 asli buatan Rusia. Pengunjung bisa masuk ke dalam kapal selam dan melihat interior ruang kendali serta torpedo.",
         alamat: "Jl. Pemuda No.39, Embong Kaliasin, Kec. Genteng, Kota SBY, Jawa Timur 60271"
@@ -108,6 +116,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "murah",
         harga: "Rp 10.000",
+        jam: "12.00 - 19.00 WIB",
         gambar: "images/snq.jpg",
         deskripsi: "Tempat nongkrong kekinian di tepi laut Pelabuhan Tanjung Perak. Menawarkan pemandangan laut lepas dan kapal pesiar mewah yang bersandar.",
         alamat: "Jl. Pelabuhan Tanjung Perak, Surabaya, Jawa Timur"
@@ -120,6 +129,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "gratis",
         harga: "Gratis",
+        jam: "07.00 - 21.00 WIB",
         gambar: "images/alun.png",
         deskripsi: "Ikon pusat kota Surabaya yang menggabungkan area terbuka hijau dan ruang seni bawah tanah (basement) yang sering mengadakan pameran seni.",
         alamat: "Jl. Taman Surya No.1, Alun-alun Contong, Kec. Bubutan, Kota SBY, Jawa Timur 60174"
@@ -132,6 +142,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "gratis",
         harga: "Gratis",
+        jam: "06.00 - 18.00 WIB",
         gambar: "images/taman-harmoni.webp",
         deskripsi: "Taman Harmoni Keputih menawarkan keindahan bunga berwarna-warni dan spot favorit bunga matahari untuk swafoto. Selain itu, terdapat juga hutan bambu bernuansa alami yang sering dijadikan latar foto, termasuk pre-wedding.",
         alamat: "Jl. Keputih Tegal Timur No.17, Keputih, Kec. Sukolilo, Kota SBY, Jawa Timur 60111"
@@ -144,6 +155,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "gratis",
         harga: "Gratis",
+        jam: "08.00 - 17.00 WIB",
         gambar: "images/patung.jpg",
         deskripsi: "Patung Buddha 4 Rupa di Klenteng Hong Sang Tan, Kenjeran, memiliki 4 wajah dan 8 tangan berlapis emas. Dikenal juga dengan nama lain seperti She Mien Fo atau Dewa Catur Muka. Empat wajahnya melambangkan murah hati, adil, pengasih, dan meditasi, sementara 8 tangannya memegang benda suci berbeda sebagai simbol kekuatan Buddha.",
         alamat: "Jl. Pantai Ria Kenjeran No.8, Sukolilo Baru, Kec. Bulak, Kota Surabaya, Jawa Timur 60122"
@@ -156,6 +168,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "gratis",
         harga: "Gratis",
+        jam: "24 Hours",
         gambar: "images/sunan-ampel.jpg",
         deskripsi: "Kampung Arab di kawasan Ampel, Surabaya, dihuni mayoritas warga keturunan Arab dan menjadi destinasi wisata religi. Selain mengenal budaya Arab, pengunjung dapat membeli suvenir seperti pakaian, minyak wangi, dan perlengkapan ibadah.",
         alamat: "Jl. Ampel, Kec. Semampir, Kota SBY, Jawa Timur 60151"
@@ -168,6 +181,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "murah",
         harga: "Rp 10.000 - Rp 25.000",
+        jam: "08.00 - 16.00 WIB",
         gambar: "images/mangrove.jpg",
         deskripsi: "Eko-Wisata Mangrove Wonorejo menawarkan pengalaman edukasi dan rekreasi di hutan mangrove yang asri. Pengunjung dapat berjalan di jembatan kayu yang melintasi area mangrove, menikmati keindahan alam, serta belajar tentang ekosistem mangrove dan pentingnya pelestarian lingkungan.",
         alamat: "Jl. Raya Wonorejo No.1, Wonorejo, Rungkut, Kota SBY, Jawa Timur 60293"
@@ -180,6 +194,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "gratis",
         harga: "Gratis",
+        jam: "08.00 - 00.00 WIB",
         gambar: "images/kembang-jepun.jpg",
         deskripsi: "Jalan Kembang Jepun, China Town Surabaya, menawarkan kuliner khas Surabaya dan Tiongkok dari sekitar 200 pedagang. Selain menikmati makanan, pengunjung juga bisa berfoto dengan ornamen Tiongkok yang menghiasi jalan dan bangunan.",
         alamat: "Jl. Kembang Jepun, Kec. Genteng, Kota SBY, Jawa Timur 60275"
@@ -192,6 +207,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "gratis",
         harga: "Gratis",
+        jam: "06.00 - 22.00 WIB",
         gambar: "images/harvestory-park.jpg",
         deskripsi: "Harvestory Park menawarkan sejumlah wahana dan spot menarik berlatar pemandangan indah. Saat berada di Harvestory Park, sejumlah aktivitas yang bisa dilakukan di antaranya berkeliling danau dengan perahu, atau olahraga lari di area jogging track yang disediakan.",
         alamat: "Kompleks Grand Harvest, Jalan Raya Wiyung, Kelurahan Balas Klumprik, Kecamatan Wiyung, Surabaya"
@@ -204,21 +220,23 @@ const dataWisata = [
         suasana: "tenang",
         budget: "gratis",
         harga: "Gratis",
-        gambar: "images/taman-kunang.jpeg",
+        jam: "24 Hours",
+        gambar: "images/taman-kunang.jpg",
         deskripsi: "Taman kunang-kunang menjadi salah satu tujuan wisata gratis hingga tempat bersantai serta piknik keluarga yang nyaman di area Surabaya. Taman ini memiliki luas 400 meter persegi. Taman Kunang-kunang dinamakan demikian karena ada miniatur serangga kunang-kunang di sini.",
         alamat: "Jl. Penjaringan Tim. No.22A, Penjaringan Sari, Kecamatan Rungkut, Surabaya"
     },
     {
         id: 18,
-        nama: "Hutan Bambu Keputih",
-        jenis: ["alam", "keluarga"],
-        lokasi: "outdoor",
-        suasana: "tenang",
-        budget: "gratis",
-        harga: "Gratis",
-        gambar: "images/hutan-bambu.jpg",
-        deskripsi: "Hutan Bambu Keputih berisi pohon bambu yang berjajar rapi sehingga memunculkan suasana asri. Hutan Bambu Keputih cocok jadi tempat menenangkan diri di tengah hiruk-pikuknya kota besar.",
-        alamat: "Jl. Raya Marina Asri, Keputih, Kecamatan Sukolilo, Surabaya"
+        nama: "KidZania Surabaya",
+        jenis: ["keluarga"],
+        lokasi: "indoor",
+        suasana: "ramai",
+        budget: "menengah",
+        harga: "Rp 100.000 - Rp 200.000",
+        jam: "10.00 - 17.00 WIB",
+        gambar: "images/kidzania.webp",
+        deskripsi: "KidZania Surabaya adalah taman bermain edukatif yang dirancang seperti miniatur kota, di mana anak-anak dapat belajar dan bermain peran dalam berbagai profesi. Tempat ini menawarkan pengalaman belajar yang menyenangkan dan interaktif untuk anak-anak.",
+        alamat: "Lagoon Avenue Mall, Jl. KH Abdul Wahab Siamin Surabaya No.Kav. 9-10, Dukuh Pakis, Kec. Dukuhpakis, Surabaya, Jawa Timur 60225"
     },
     {
         id: 19,
@@ -228,6 +246,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "Menengah",
         harga: "Rp 100.000",
+        jam: "10.00 - 18.00 WIB",
         gambar: "images/atlantis-land.jpg",
         deskripsi: "Atlantis Land adalah taman rekreasi keluarga yang menawarkan berbagai wahana edukasi dan hiburan. Tempat ini menawarkan berbagai wahana, seperti antara lain Istana Es, Dino Land, Tornado & Boomerang Slide, dan Istana Patung Lilin.",
         alamat: "Jl. Sukolilo Lor No.100, Sukolilo Baru, Surabaya, Jawa Timur 60122"
@@ -240,6 +259,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "murah",
         harga: "Rp 10.000 - Rp 15.000",
+        jam: "07.00 - 16.00 WIB",
         gambar: "images/taman-kenjeran.jpg",
         deskripsi: "Taman Hiburan Pantai Kenjeran menyuguhkan daya tarik wisata pesisir pantai di utara Kota Surabaya. Keindahan pesona pantai dengan pemandangan berlatar belakang Jembatan Suramadu bisa dinikmati dari sini. Beragam fasilitas seperti gazebo, anjungan, stan – stan souvenir produk UMKM, dan oleh-oleh khas Pantai Kenjeran Surabaya bisa dinikmati disini. Terdapat pula stan makanan yang menawarkan berbagai pilihan kuliner khas pesisir wajib dicoba saat berwisata di THP Kenjeran Surabaya.",
         alamat: "Jl. Pantai Ria Kenjeran, Kenjeran, Kec. Bulak, Surabaya, Jawa Timur 60123"
@@ -252,6 +272,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "murah",
         harga: "Rp 5.000 - Rp 10.000",
+        jam: "08.00 - 16.00 WIB",
         gambar: "images/romokalisari.jpg",
         deskripsi: "Romokalisari Adventure Land menawarkan pengalaman wisata alam dengan berbagai wahana permainan seru dan edukatif. Berlokasi di atas lahan seluas lebih dari 76.000 meter persegi, tempat ini menghadirkan nuansa rekreasi outdoor yang menyenangkan untuk semua usia. Beberapa wahana favorit di sini antara lain Playground, Mini Zoo, Arena Berkuda, ATV, Kano dan Sekoci di kawasan mangrove, serta Jetski.",
         alamat: "Jl. Romokalisari I, Romokalisari, Kec. Benowo, Surabaya, Jawa Timur 60192"
@@ -264,6 +285,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "gratis",
         harga: "Gratis",
+        jam: "07.00 - 17.00 WIB",
         gambar: "images/kebun-bibit.jpg",
         deskripsi: "Kebun Bibit / Taman Flora merupakan taman menarik dengan aneka tumbuhan tropis dengan berbagai jenis pohon. Tidak kurang dari seribu pohon tumbuh di sana hingga dapat memberikan suasana yang sejuk, nyaman dan udara yang segar. Taman ini dilengkapi dengan : sangkar burung raksasa, kandang rusa, permainan outbond untuk anak-anak, taman bacaan, dan Free Wifi.",
         alamat: "Jl. Raya Bratang Binangun, Baratajaya, Kec. Gubeng, Surabaya, Jawa Timur 60284"
@@ -276,21 +298,23 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 10.000",
+        jam: "08.00 - 22.00 WIB",
         gambar: "images/kalimas.jpg",
         deskripsi: "Wisata Perahu Kalimas menawarkan pengalaman unik menyusuri sungai di tengah kota Surabaya dengan suasana malam yang romantis. Rute perjalanan perahu dimulai dari Taman Prestasi hingga Taman Ekspresi, melewati berbagai titik menarik seperti Museum Pendidikan, Pasar Apung, dan taman-taman tematik.",
         alamat: "Jl. Ketabang Kali No.2-B, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272"
     },
     {
         id: 24,
-        nama: "Kampung Arab",
-        jenis: ["religi", "kuliner"],
-        lokasi: "outdoor",
-        suasana: "ramai",
-        budget: "gratis",
-        harga: "Gratis",
-        gambar: "images/kampung-arab.jpg",
-        deskripsi: "Kampung ini dihuni oleh penduduknya yang mayoritas berasal dari Arab. Kampung Arab menjadi salah satu kampung yang dijadikan tempat wisata di Surabaya dan mendapat perhatian dari banyak wisatawan. Selain bisa mengenal budaya Arab yang masih kental, kamu juga bisa berburu suvenir mulai dari pakaian, minyak wangi, hingga peralatan ibadah yang dijual di kampung yang terletak di kawasan Ampel tersebut.",
-        alamat: "Jl. Ampel Kejeron I No.4, RT.006/RW.02, Ampel, Kec. Semampir, Kota SBY, Jawa Timur 60151"
+        nama: "Trans Snow World",
+        jenis: ["keluarga"],
+        lokasi: "indoor",
+        suasana: "menengah",
+        budget: "menengah",
+        harga: "Rp 90.000 - Rp 135.000",
+        jam: "11.00 - 19.00 WIB",
+        gambar: "images/trans-snow-world.webp",
+        deskripsi: "Trans Snow World adalah taman bermain salju indoor yang menawarkan pengalaman bermain salju sepanjang tahun. Tempat ini cocok untuk keluarga dan anak-anak yang ingin merasakan sensasi salju tanpa harus pergi ke luar negeri. Fasilitas yang tersedia meliputi area bermain salju, seluncuran es, dan berbagai aktivitas seru lainnya.",
+        alamat: "Jl. Ahmad Yani No.260, Siwalankerto, Kec. Wonocolo, Surabaya, Jawa Timur 60235"
     },
     {
         id: 25,
@@ -300,7 +324,8 @@ const dataWisata = [
         suasana: "menengah",
         budget: "gratis",
         harga: "Gratis",
-        gambar: "images/kelenteng-sanggar-agung.jpg",
+        jam: "07.00 - 20.00 WIB",
+        gambar: "images/kelenteng-sanggar-agung.jpeg",
         deskripsi: "Klenteng Sanggar Agung juga dikenal dengan sebutan Klenteng Hong San Tang. Didirikan pada tahun 1999 dan berfungsi sebagai tempat ibadah umat Tri Dharma. Klenteng ini memiliki ciri khas yaitu terdapat patung Dewi Kwan Im setinggi 20 meter dan berada di tepi laut. Patung ini menjadi daya tarik wisata dan menjadi spot foto favorit bagi siapapun yang berkunjung kesana.",
         alamat: "Jl. Sukolilo No.100, Sukolilo Baru, Kecamatan Pantai Kenjeran, Surabaya, East Java 60122"
     },
@@ -312,6 +337,7 @@ const dataWisata = [
         suasana: "ramai",
         budget: "menengah",
         harga: "Rp 25.000 - Rp 50.000 per orang",
+        jam: "11.00 - 22.00 WIB",
         gambar: "images/food-junction.jpg",
         deskripsi: "Food Junction Grand Pakuwon telah menjadi destinasi kuliner dan rekreasi yang menarik di Surabaya Barat. Berlokasi strategis di dekat pintu masuk utama Grand Pakuwon, tempat ini menyediakan lebih dari 100 tenant makanan dan minuman dengan konsep indoor dan outdoor dengan danau buatan seluas lebih dari 4.400 m².",
         alamat: "Jl. Grand Banjar Mutiara Asri No.1, Banjar Sugihan, Kec. Tandes, Surabaya, Jawa Timur 60184"
@@ -324,7 +350,8 @@ const dataWisata = [
         suasana: "menengah",
         budget: "murah",
         harga: "Rp 2.000",
-        gambar: "images/kampung-bulak.jpg",
+        jam: "24 Hours",
+        gambar: "images/kampung-bulak.jpeg",
         deskripsi: "Kampung Bulak Surabaya adalah kampung nelayan warna-warni di pesisir Kenjeran yang diubah menjadi destinasi wisata ikonik dengan rumah-rumah dicat cerah, mural menarik, dan dilengkapi Sentra Ikan Bulak (SIB) untuk kuliner laut serta oleh-oleh seperti ikan asap dan kerupuk ikan, menjadi tempat yang instagramable dan membangkitkan ekonomi warga pesisir. ",
         alamat: "Kampung Bulak, Kenjeran, Kec. Bulak, Kota Surabaya, Jawa Timur"
     },
@@ -336,6 +363,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "gratis",
         harga: "Gratis",
+        jam: "08.00 - 16.00 WIB",
         gambar: "images/hutan-kota-pakal.jpg",
         deskripsi: "Hutan Kota Pakal merupakan salah satu lahan hijau yang dipertahankan pemerintah setempat untuk menjaga kestabilan alam. Keberadaan hutan kota tersebut dapat menjadi tempat piknik untuk menghilangkan penat dari kesibukan Kota Surabaya. Hutan Kota Pakal memiliki luas sekitar 6 hektar dengan beragam koleksi pohon di dalamnya. Jenis tanaman dan pohon yang ada di Tahura Pakal adalah Akasia, Waru Laut, Cemara Udang, Trembesi, Dadap Serap, Jati, Ketepeng, /Kepuh, Mahoni, Kemiri, Sogok Telik, Sono, Mangrove, Kluweh, Sawo Kecik, Mangga, Kelapa, Cerme.",
         alamat: "Jl. Raya Pakal Gg. Sidorejo, Pakal, Surabaya, Jawa Timur 60196"
@@ -348,6 +376,7 @@ const dataWisata = [
         suasana: "menengah",
         budget: "gratis",
         harga: "Gratis",
+        jam: "06.00 - 21.00 WIB",
         gambar: "images/taman-cahaya.jpg",
         deskripsi: "Taman Cahaya Surabaya adalah salah satu ruang hijau ikonik di Kota Surabaya yang menawarkan suasana yang asri dan nyaman untuk warga kota maupun wisatawan. Terletak di kawasan yang mudah diakses, taman ini menjadi tempat favorit bagi mereka yang ingin bersantai, berolahraga, atau menikmati waktu bersama keluarga di tengah hiruk pikuk kota. Taman ini dilengkapi dengan berbagai fasilitas untuk memenuhi kebutuhan pengunjung, antara lain: area bermain anak, jogging track, area piknik, kandang rusa, lapangan futsal, perpustakaan mini, dan taman bunga yang indah.",
         alamat: "Jalan Raya Babat Jerawat No. 68, Pakal, Surabaya Barat, Surabaya, Jawa Timur"
@@ -360,6 +389,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 5.000",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/museum-dr-soetomo.jpg",
         deskripsi: "Gedung Nasional Indonesia (GNI) mulai dibangun pada 11 Juli 1930 yang awalnya difungsikan sebagai tempat pertemuan para tokoh perintis kemerdekaan dalam menyusun taktik dan strategi dalam mencapai kemerdekaan Indonesia. Pada tahun 2017 salah satu bangunan di dalam komplek GNI dipakai untuk Museum Dr. Soetomo, yang khusus menampilkan riwayat hidup Dr. Soetomo. Di dalam museum ini dapat dijumpai lebih dari 300 koleksi berupa alat-alat kesehatan dan foto-foto.",
         alamat: "Jl. Bubutan No.85-87, Bubutan, Kec. Bubutan, Surabaya, Jawa Timur 60174"
@@ -372,6 +402,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 5.000",
+        jam: "08.00 - 21.00 WIB (TUE-SUN)",
         gambar: "images/museum-pendidikan.jpg",
         deskripsi: "Museum Pendidikan Surabaya merupakan museum tematik yang didirikan sebagai langkah pelestarian sejarah dan budaya bangsa dengan tujuan untuk mendukung kegiatan edukasi, riset dan rekreasi di Kota Surabaya. Museum ini menyimpan bukti materiil Pendidikan pada masa Pra-Aksara, Masa Klasik, Masa Kolonial dan Masa Kemerdekaan. Menempati sebuah bangunan di Jalan Genteng Kali no. 10 yang merupakan bekas gedung Sekolah Taman Siswa.", 
         alamat: "Jl. Genteng Kali No.10, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275"
@@ -384,6 +415,7 @@ const dataWisata = [
         suasana: "tenang",
         budgets: "gratis",
         harga: "Gratis",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/museum-sby.jpg",
         deskripsi: "Museum Surabaya diresmikan oleh Walikota Surabaya pada tanggal 3 Mei 2015. Museum ini berlokasi di ujung Jalan Tunjungan, tepatnya di dalam gedung ex. SIOLA. Koleksi-koleksinya berkaitan dengan sosial budaya Kota Surabaya. Gedung ini sendiri merupakan salah satu bangunan cagar budaya yang dulunya bernama Gedung Whiteaway Laidlaw.",
         alamat: "Jl. Tunjungan No.1, Genteng, Kec. Genteng, Surabaya, Jawa Timur 60275"
@@ -396,6 +428,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 5.000",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",        
         gambar: "images/museum-hos.jpg",
         deskripsi: "Museum ini dulunya merupakan rumah dari salah satu tokoh pergerakan nasional yakni Haji Oemar Said Tjokroaminoto. Rumah tersebut tidak hanya digunakan oleh Pahlawan Nasional H. O. S. Tjokroaminoto beserta keluarga sebagai tempat tinggal, namun juga sebagai tempat dimana tokoh-tokoh pergerakan dari berbagai latar belakang ideologi seperti Semaoen, Alimin, Darsono, serta Tan Malaka bertemu dan berdialog. Jumlah Koleksi saat ini terdapat di Museum H.O.S Tjokroaminoto sebanyak 143 Koleksi terkait dengan rumah Tinggal H.O.S Tjokroaminoto.",
         alamat: "Jl. Peneleh Gg. VII No.29-31, Peneleh, Kec. Genteng, Surabaya, Jawa Timur 60274"
@@ -408,6 +441,7 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 5.000",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/museum-wr.jpg",
         deskripsi: "Museum ini menempati rumah wafat Wage Rudolf Soepratman di Jalan Mangga no 21 Surabaya. Rumah ini menjadi saksi akhir perjuangan sang komposer yang meskipun kondisi sakit tetap berjuang demi kemerdekaan Indonesia dengan caranya sendiri melalui biola. Jumlah koleksi yang terdapat di Museum W.R Soepratman saat ini sebanyak 39 koleksi. Diantaranya terdapat replika pakaian W.R Soepratman, replika biola W.R Soepratman, zona memorabilia, serta zona penghargaan pemerintah Indonesia kepada W.R Soepratman.",
         alamat: "Jl. Mangga No.21, Tambaksari, Kec. Tambaksari, Surabaya, Jawa Timur 60136"
@@ -420,9 +454,204 @@ const dataWisata = [
         suasana: "tenang",
         budget: "murah",
         harga: "Rp 5.000",
+        jam: "08.00 - 15.00 WIB (TUE-SUN)",
         gambar: "images/museum-olahraga.jpg",
         deskripsi: "Museum Olahraga dibangun untuk menggambarkan dinamika sejarah dan budaya bangsa Indonesia terkait cerita sejarah olahraga serta benda-benda / bukti materiil peninggalan para Pejuang dan Pahlawan Olahraga Surabaya. Museum ini menyimpan koleksi-koleksi Atlet Surabaya. Ratusan koleksi yang ada terbagi menjadi tiga jenis yaitu koleksi historika (koleksi yang diperoleh dari hasil temuan, hasil escavasi atau bukti materil bersejarah), koleksi heraldika (tanda penghargaan atau jasa, kepangkatan, lambang atau logo), dan koleksi teknologika terkait benda dengan unsur teknologi.",
         alamat: "Jl. Indragiri No. 6, Darmo, Kec. Wonokromo, Surabaya, Jawa Timur 60241"
+    },
+    {
+        id: 36,
+        nama: "OCA Ice Skating Arena Surabaya",
+        jenis: ["keluarga"],
+        lokasi: "indoor",
+        suasana: "ramai",
+        budget: "menengah",
+        harga: "Rp 99.000 - Rp 150.000",
+        jam: "10.00 - 22.00 WIB",
+        gambar: "images/oca-ice-skating.jpeg",
+        deskripsi: "OCA Ice Skating Arena Surabaya adalah arena ice skating indoor yang menawarkan pengalaman bermain ice skating yang menyenangkan untuk keluarga dan pengunjung dari berbagai usia. Tempat ini dilengkapi dengan fasilitas modern dan aman, cocok untuk pemula maupun yang sudah mahir. Di tempat wisata ini, pengunjung bisa merasakan berseluncur di atas es dengan area yang luas. Harga tiket masuk sudah termasuk persewaan sepatu, dan para pengunjung wajib menggunakan sarung tangan dan kaos kaki.",
+        alamat: "Jl. Embong Malang No. 39-42, Surabaya (Parkiran Motor Belakang TP 6)"
+    },
+    {
+        id: 37,
+        nama: "Pasar Malam Kodam V Brawijaya",
+        jenis: ["keluarga", "kuliner"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "18.00 - 22.00 WIB",
+        gambar: "images/pasar-kodam.webp",
+        deskripsi: "Pasar Malam Kodam V Brawijaya adalah pasar malam yang menawarkan berbagai kuliner dan hiburan keluarga. Tempat ini ramai dikunjungi oleh warga Surabaya dan sekitarnya, terutama pada malam hari. Pengunjung dapat menikmati suasana yang meriah dengan berbagai pilihan makanan dan permainan.",
+        alamat: "Jl. Brawijaya, Sawunggaling, Kec. Wonokromo, Surabaya, Jawa Timur 60242"
+    },
+    {
+        id: 38,
+        nama: "De Javasche Bank (Museum Bank Indonesia)",
+        jenis: ["edukasi", "sejarah"],
+        lokasi: "indoor",
+        suasana: "tenang",
+        budget: "gratis",
+        jam: "08.00 - 16.00 WIB (TUE-SUN)",
+        harga: "Gratis",
+        gambar: "images/museum-bank.jpg",
+        deskripsi: "De Javasche Bank bergaya Neo-Renaissance dengan ciri simetris, berdiri di lahan 1000 m². Awalnya difungsikan 14 September 1829, lalu dipugar tahun 1910 agar lebih sesuai iklim tropis. Setelah dinasionalisasi 1951, gedung ini menjadi kantor Bank Indonesia Surabaya (1953–1972). Pada 27 Januari 2012, bangunan tiga lantai ini ditetapkan sebagai cagar budaya. Kini terbuka gratis bagi masyarakat untuk melihat jejak perbankan Surabaya, dengan lokasi mudah dijangkau.",
+        alamat: "Jl. Garuda No.1, Krembangan Sel., Kec. Krembangan, Surabaya, Jawa Timur 60175"
+    },
+    {
+        id: 39,
+        nama: "Masjid Muhammad Cheng Hoo",
+        jenis: ["religi"],
+        lokasi: "indoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "04.00 - 22.00 WIB",
+        gambar: "images/cheng-hoo.jpg",
+        deskripsi: "Masjid Chengho dibangun tahun 2001 dengan desain terinspirasi Masjid Niu Jie Beijing. Dirancang PITI, bangunan utama berukuran 11x9 meter melambangkan Ka’bah, Wali Songo, dan 99 Asmaul Husna. Atap segi delapan (pat kwa) bermakna kejayaan dan keberuntungan, sementara warna merah, hijau, dan emas khas Tiongkok melambangkan keberuntungan serta kedamaian.",
+        alamat: "Jl. Gading No.2, Gading, Kec. Tambaksari, Surabaya, Jawa Timur 60135"
+    },
+    {
+        id: 40,
+        nama: "Pura Agung Jagat Karana",
+        jenis: ["religi"],
+        lokasi: "outdoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "07.00 - 21.00 WIB",
+        gambar: "images/pura-agung-jagat-karana.jpg",
+        deskripsi: "Pura Agung Jagat Karana dibangun tahun 1968 dan mulai difungsikan 29 November 1969 bertepatan dengan Hari Saraswati. Luasnya 7.703 m² dengan nuansa Hindu yang tenang dan asri. Pada 1987 pura ini dipugar, diresmikan kembali 20 September oleh Gubernur Jawa Timur Wahono, dan digunakan lagi sejak 26 September 1987 hingga kini. Kini menjadi salah satu destinasi wisata unggulan di Surabaya Utara.",
+        alamat: "Jl. Ikan Lumba-Lumba No.1, Perak Bar., Kec. Krembangan, Surabaya, Jawa Timur 60177"
+    },
+    {
+        id: 41,
+        nama: "Museum Etnografi",
+        jenis: ["edukasi"],
+        lokasi: "indoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "10.00 - 16.00 WIB (Weekdays)",
+        gambar: "images/museum-etnografi.jpg",
+        deskripsi: "Museum Etnografi ini didirikan pada tanggal 25 September 2005, bertepatan dengan tanggal didirikannya Departemen Antropologi FISIP UNAIR. Awal berdirinya museum Etnografi dilatarbelakangi dari banyaknya koleksi yang dimiliki oleh salah satu pemrakarsa Antropologi Ragawi FISIP UNAIR, yaitu Dr. A. Adi Sukadana yang sering melakukan penggalian dalam konteks Antropologi Ragawi. Temuan-temuan tersebut akhirnya dikumpulkan dan disimpan di Departemen Antropologi, hingga akhirnya didirikanlah Museum Etnografi. Selama 10 tahun, museum ini belum dibuka untuk umum, dan akhirnya dibuka untuk umum pada tahun 2017",
+        alamat: "Universitas Airlangga, Kampus B, Jl. Airlangga No.4-6, Airlangga, Kec. Gubeng, Surabaya, Jawa Timur 60286"
+    },
+    {
+        id: 42,
+        nama: "Annyeong Market",
+        jenis: ["keluarga", "kuliner"],
+        lokasi: "outdoor",
+        suasana: "menengah",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "11.00 - 22.00 WIB",
+        gambar: "images/annyeong.jpg",
+        deskripsi: "Annyeong Market Surabaya merupakan salah satu tempat hangout yang dapat dikunjungi. Tempat ini memiliki nuansa ala drama Korea yang menyenangkan. Di Annyeong Market, pengunjung dapat menikmati suasana berwisata belanja dengan atmosfer Korea Selatan. Selain itu, tempat ini juga dapat menjadi rujukan wisata kuliner yang menggugah selera.",
+        alamat: "Jl. Babatan Pantai Ut. No.II, Kalijudan, Kec. Mulyorejo, Surabaya, Jawa Timur 60138"
+    },
+    {
+        id: 43,
+        nama: "Sentra Kuliner G-Walk",
+        jenis: ["keluarga", "kuliner"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "09.00 - 22.00 WIB",
+        gambar: "images/g-walk.jpg",
+        deskripsi: "G-Walk terletak di kawasan perumahan Citraland dan berdiri sejak 2002. Konsepnya sebagai pusat kuliner di sepanjang koridor jalan dengan banyak kafe dan restoran yang menawarkan beragam makanan dan minuman. Desain modern dengan lampu warna-warni menjadi spot foto menarik, serta setiap tahun diadakan berbagai atraksi. G-Walk selalu ramai dikunjungi pecinta kuliner siang dan malam.",
+        alamat: "G Walk Citraland, Ruko Taman Gapura, Jl. Niaga Gapura No.14"
+    },
+    {
+        id: 44,
+        nama: "Pasar Ndeso Nyi Pandan Sari",
+        jenis: ["kuliner"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "15.00 - 21.00 WIB (SAT), 06.00 - 11.00 WIB (SUN)",
+        gambar: "images/pasar-ndeso.jpeg",
+        deskripsi: "Destinasi wisata yang mengusung konsep pasar lawasan ini kental dengan sentuhan khas pedesaan. Pasar Ndeso Nyi Pandan Sari menghadirkan pengalaman unik yang membawa kita seolah-olah kembali ke masa lalu, salah satunya adalah sistem transaksi menggunakan uang keping. Disini bisa ditemukan berbagai jajanan tradisional seperti Angsle ronde, sego pecel, srabi ndeso, dan banyak kuliner lezat lainnya.",
+        alamat: "Jl. Jeruk Gang 4 RW 2, Jeruk, Kec. Lakarsantri"
+    },
+    {
+        id: 45,
+        nama: "Pura Segara Kenjeran",
+        jenis: ["religi"],
+        lokasi: "outdoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "24 Hours",
+        gambar: "images/pura-segara-surabaya.jpg",
+        deskripsi: "Pura Segara, yang berarti laut atau air dalam bahasa Bali, diresmikan tahun 1981 sebagai tempat sembahyang dan meditasi umat Hindu. Area pura seluasnya memiliki beragam bangunan seperti pos pecalang, nista mandala, tirta, taman beji, candi bentar, bale bengong, dan bale gong. Selain itu, tersedia kelas agama Hindu untuk PAUD hingga SMA. Pada hari tertentu, pura ini juga menyajikan pertunjukan budaya dan kerohanian seperti ogoh-ogoh, barong, tarian, kuliner, gamelan Bali, dan kegiatan lainnya.",
+        alamat: "Komplek TNI AL, Jl. Memet Sastrowirya No.1A, Komp. Kenjeran"
+    },
+    {
+        id: 46,
+        nama: "Makam / Kelenteng Mbah Ratu",
+        jenis: ["religi"],
+        lokasi: "outdoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "06.00 - 19.00 WIB",
+        gambar: "images/makam-mbah-ratu.jpg",
+        deskripsi: "Makam Mbah Ratu dipercaya orang sebagai makam buritan perahu dari Laksamana Cheng Ho dari negeri Cina. Cheng Ho mengadakan muhibah pada tahun 1414 dan perahunya hancur di Pelabuhan Holandper (Tanjung Perak). Sebenarnya makam ini adalah pindahan dari makam perahu sebelumnya yang ada di Prapat Kurung.",
+        alamat: "Jl. Demak no.380"
+    },
+    {
+        id: 47,
+        nama: "Jamboree Playland",
+        jenis: ["keluarga"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "murah",
+        harga: "Rp 5.000 - Rp 20.000",
+        jam: "09.00 - 16.00 WIB (TUE-SUN)",
+        gambar: "images/jamboree-playland.jpeg",
+        deskripsi: "Jamboree Playland merupakan tempat hiburan baru di Kota Surabaya yang cocok untuk dijadikan destinasi berlibur bersama anak dan keluarga. Adapun fasilitas yang tersedia antara lain Kolam renang Dewasa dengan kedalaman 125 cm, kolam renang anak-anak dengan ukuran 30 cm dan 50 cm, Taman Sensorik, toilet dan ruang ganti untuk pria, wanita dan disabilitas.",
+        alamat: "Ketintang Madya VII"
+    },
+    {
+        id: 48,
+        nama: "Makam Boto Putih",
+        jenis: ["religi"],
+        lokasi: "outdoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        gambar: "images/boto-putih.jpg",
+        deskripsi: "Makam Boto Putih di Surabaya dikenal sebagai tempat peristirahatan Kyai Ageng Brondong atau Sunan Boto Putih, tokoh penyebar Islam di kawasan Ampel. Lokasinya berada di Dukuh Boto Putih, dekat kawasan religi Sunan Ampel, sehingga menjadi salah satu destinasi wisata ziarah yang ramai dikunjungi masyarakat untuk mengenang sejarah dan berdoa.",
+        alamat: "Jl. Pegirian, Sidodadi, Kec. Simokerto, Surabaya, Jawa Timur"
+    },
+    {
+        id: 49,
+        nama: "Suroboyo Park",
+        jenis: ["keluarga", "alam"],
+        lokasi: "outdoor",
+        suasana: "ramai",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "24 Hours",
+        gambar: "images/sby-park.jpg",
+        deskripsi: "Taman Suroboyo berada di depan Sentra Ikan Bulak (SIB). Menempati lahan seluas 11.000 meter persegi. Yang sangat mencolok disini yaitu tampak ikon Surabaya yaitu Patung Suro Boyo setinggi 25m. Pada area tengah taman terdapat ruang terbuka yang bisa dimanfatkan untuk olahraga, bermain sepatu roda, ataupun nongkrong menikmati suasana. Di sisi kanan taman terdapat tanaman-tanaman yang rindang dan playground untuk anak-anak. Bila berkunjung ke Taman Suroboyo di pagi hari maka dapat terlihat sunrise yang cantik.",
+        alamat: "Jl. Pantai Kenjeran"
+    },
+    {
+        id: 50,
+        nama: "Makam Sunan Bungkul",
+        jenis: ["religi"],
+        lokasi: "outdoor",
+        suasana: "tenang",
+        budget: "gratis",
+        harga: "Gratis",
+        jam: "24 Hours",
+        gambar: "images/sunan-bungkul.jpg",
+        deskripsi: "Makam Sunan Bungkul di Surabaya menjadi destinasi ziarah yang ramai dikunjungi. Kompleksnya masih menyimpan nuansa Kampung Bungkul dengan gapura ala Majapahit, mushala lama, gazebo rendah, serta makam-makam di bawah pohon tua. Di dalam cungkup terdapat makam Sunan Bungkul, dan di area makam ada sumur yang dipercaya bertuah. Setiap hari sekitar 100 peziarah datang, sementara pada hari libur jumlahnya bisa mencapai ribuan dari berbagai daerah.",
+        alamat: "Taman Bungkul St, Darmo, Wonokromo, Surabaya, East Java 60291"
     }
 ];
 
@@ -487,8 +716,9 @@ function lihatDetail(idWisata) {
         // Update Info Footer Modal
         document.getElementById("modalLoc").innerHTML = `<i class="fa-solid fa-building"></i> ${wisata.lokasi.charAt(0).toUpperCase() + wisata.lokasi.slice(1)}`;
         document.getElementById("modalPrice").innerHTML = `<i class="fa-solid fa-wallet"></i> ${wisata.harga || "Harga tidak tersedia"}`;
+        document.getElementById("modalOpenHours").innerHTML = `<i class="fa-solid fa-clock"></i> ${wisata.jam || "Jam operasional tidak tersedia"}`;
 
-        // Tampilkan Modal
+        // Tampilkan ModalS
         document.getElementById("detailModal").style.display = "block";
     }
 }
